@@ -1,6 +1,6 @@
 # Electric
 
-Thirs hand-in-assignment @ YRGO. Design and create a landing page for a chosen product.
+Third hand-in-assignment @ YRGO. Design and create a landing page for a chosen product.
 
 # The code includes:
 <ul>
