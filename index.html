@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <section class="hero-container">
         <nav>
+            <div class="menu-visible">
+                <a href="#">Home</a>
+                <a href="#">Electric</a>
+                <a href="#">Merch</a>
+                <a href="#">I'm interested</a>
+            </div>
             <button>=</button>
         </nav>
 
     
-        <h1>Electric.</h1>
+        <h1>ELECTRIC.</h1>
         <h2>You are special.</h2>
-        <img src="./img/skiss-foto.jpg">
+        <!-- <img src="./img/skiss-foto.jpg"> -->
+        <picture>
+            <source srcset="/img/hero-landscape.png" media="(min-width: 800px)" class="img" />
+            <source srcset="img/hero-portrait.png" media="(min-width: 400px)" class="img" />
+            <img src="images/eric-combeau-Tw0eeOOzCVs-unsplash.jpg" alt="a lion" />
+        </picture>
     </section>
 
     <main>
@@ -28,6 +42,29 @@
                 And now we are proud to present our car for the future: Electric.
             </p>
         </section>
+
+        <!-- <section class="form">
+            <button>I'm interested!</button>
+        </section> -->
+
+
+        <button class="open-button" onclick="openForm()">I'm interested!</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h3>Sign up now and be updated on our latest news!</h3>
+
+            <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter email" name="email" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
 
         <section class="">
             <img src="img/scroll-img.jpg">
@@ -54,30 +91,64 @@
         </section>
 
         <section class="video">
-            <img src="img/scroll-img.jpg">
-            
+            <video autoplay loop playsinline>
+                <source src="img/videoloop.mp4" type="video/mp4">
+            </video>
         </section>
 
-<section class="form">
-    <button>I'm interested</button>
-    <form>
+        <div class="product">
+            <img src="img/red.png" class="main-img" alt="product-red"/>
+        </div>
+
+<!--         
+        <button class="open-button" onclick="openForm()">I'm interested</button>
+        <section class="electric-form" id="electric-form">
         
-        <input type="text"><br>
-        <input type="text"><br>
-        <input type="text"><br>
-        <button type="submit">submit</button>
-    </form>
-    
-</section>
+            <form action="/" class="form-container">
+                <label for="name"><p>Name</p></label>
+                    <input type="text">
+                <label for="email"><p>Email</p></label>
+                    <input type="text">
 
-        <section class="merch">
-<h3>hej hå</h3>
-        </section>
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+            </form>
+    
+        </section> -->
+
+        <button class="open-button" onclick="openForm()">I'm interested!</button>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h3>Sign up now and be updated on our latest news!</h3>
+
+            <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter email" name="email" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+</div>
+
+
+
+    <section class="merch">
+        <img src="/img/merch-fake.JPG" />
+        <h3>hej hå</h3>
+        <button>View more merch</button>
+    </section>
 
     </main>
     
     <footer>
-<p>hej linnformation</p>
+        <p>hej linnformation</p>
     </footer>
+
 </body>
+<script src="app.js">
+        
+</script>
 </html>
