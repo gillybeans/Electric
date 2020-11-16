@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
@@ -15,9 +16,11 @@ body {
   width: 100%;
 }
 
-button {
-  
+header {
+  background:rgba(24, 33, 50, 0.1);
+  width: 100%;
 }
+
 
 nav {
   position: fixed;
@@ -29,10 +32,30 @@ nav {
   padding: 1rem;
 }
 
+.hamburger-menu {
+  border: none;
+  background:rgba(24, 33, 50, 0.5);
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+svg {
+  width: 50px;
+  height: 30px;
+}
+
+svg path {
+  fill: white;
+
+}
+
+.menu-visible {
+  display: none;
+}
+
 .menu-visible a {
   text-decoration: none;
   color: white;
-  display: none;
 }
 
 

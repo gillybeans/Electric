@@ -1,0 +1,16 @@
+@media only screen and (min-width: 900px) {
+    .menu-visible {
+        display: block;
+
+    }
+    .menu-visible a {
+        margin: 1rem;
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+    
+
+    .hamburger-menu {
+        display: none;
+    }
+}
