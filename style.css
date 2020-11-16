@@ -72,3 +72,45 @@ footer {
 video {
   width: 100%;
 }
+
+
+
+
+
+
+/* CHOOSE COLOR */
+
+.colorproduct{
+  height: 100vh;
+}
+
+.colorproduct .main-color-img img{
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+
+/**** thumbs ****/
+
+.colorproduct .pick-color-img{
+  text-align: center;
+}
+
+.colorproduct .pick-color-img .box{
+  display: inline-block;
+  width: 70px;
+  border: 1px solid gray; 
+  border-width: 2px;
+  margin: 2px;
+  cursor: pointer;
+  /*border-radius: 50%;*/
+}
+
+.colorproduct .pick-color-img .box.active{
+  border-color: purple;
+}
+
+.colorproduct .pick-color-img img{
+  max-width: 100%;
+  max-height: 100%;
+}

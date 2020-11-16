@@ -15,5 +15,15 @@ function openFormTwo() {
   }
 
 
+/* CHOOSE COLOR */
 
-  
+const products=document.querySelector(".pick-color-img").children;
+   
+function changeImage(event){
+    document.querySelector(".pro-img").src=event.children[0].src
+    
+    for(let i=0; i<products.length;i++){
+        products[i].classList.remove("active");
+    }
+    event.classList.add("active");
+  }
