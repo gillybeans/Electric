@@ -28,6 +28,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 1rem;
+  z-index: 2;
+ 
 }
 
 .hamburger-menu {
@@ -35,6 +37,8 @@ nav {
   background:rgba(24, 33, 50, 0.5);
   box-shadow: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 svg {
@@ -53,18 +57,7 @@ svg path {
 
 
 
-.gradient-box {
-  
-/*
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(to top, #191d23 10%,rgba(0,0,0,1) 50%);
-  position: absolute;
-  z-index: 900;
-  margin:0;
-  bottom: 0;
-  */
-}
+
 
 
 
@@ -201,3 +194,28 @@ video {
   max-height: 100%;
 }
 
+
+
+
+
+
+/********* GRADIENT BOX *********/
+
+.introGradient {
+  width: 100%;
+  height: 20vh;
+  display: table;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.topGradient {
+  top: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0) 5%, black 99%);
+}
+
+.bottomGradient {
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 5%, black 99%);
+}
