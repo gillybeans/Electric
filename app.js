@@ -1,20 +1,16 @@
 /* FORMULÄR */
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+  // Open the full screen form
+  function openForm() {
+    document.getElementById("myOverlay").style.display = "block";
   }
   
+  // Close the full screen form
   function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-
-function openFormTwo() {
-    document.getElementById("myFormTwo").style.display = "block";
+    document.getElementById("myOverlay").style.display = "none";
   }
   
-  function closeFormTwo() {
-    document.getElementById("myFormTwo").style.display = "none";
-  }
+  
 
 
 /* CHOOSE COLOR */
@@ -29,3 +25,6 @@ function changeImage(event){
     }
     event.classList.add("active");
   }
+
+
+

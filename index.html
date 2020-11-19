@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TEST ELECTRIC</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <section class="hero-container">
@@ -17,8 +17,8 @@
                 <div class="menu-visible">
                     <a href="#">HOME</a>
                     <a href="#">ELECTRIC</a>
-                    <a href="#">MERCH</a>
-                    <a href="#">I'M INTERESTED</a>
+                    <a href="#merch">MERCH</a>
+                    <a href="#" onclick="openForm()">I'M INTERESTED</a>
                 </div>
                 <button aria-label="Open menu" class="hamburger-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.97 384.97"><path d="M12.03 120.303h360.909c6.641 0 12.03-5.39 12.03-12.03 0-6.641-5.39-12.03-12.03-12.03H12.03c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03zM372.939 180.455H12.03c-6.641 0-12.03 5.39-12.03 12.03s5.39 12.03 12.03 12.03h360.909c6.641 0 12.03-5.39 12.03-12.03s-5.389-12.03-12.03-12.03zM372.939 264.667H132.333c-6.641 0-12.03 5.39-12.03 12.03 0 6.641 5.39 12.03 12.03 12.03h240.606c6.641 0 12.03-5.39 12.03-12.03.001-6.641-5.389-12.03-12.03-12.03z"/></svg>
@@ -27,9 +27,8 @@
 
 
     
-        <h1>ELECTRIC.</h1>
-        <h2>You are special.</h2>
-        <!-- <img src="./img/skiss-foto.jpg"> -->
+        <h1 class="page-title">ELECTRIC.</h1>
+        <h2 class="page-title-under">You are special.</h2>
         <picture>
             <source srcset="/img/hero-landscape.png" media="(min-width: 800px)" class="img" />
             <source srcset="img/hero-portrait.png" media="(min-width: 400px)" class="img" />
@@ -53,130 +52,141 @@
             </p>
         </section>
 
-        <!-- <section class="form">
-            <button>I'm interested!</button>
-        </section> -->
+        <section class="interested-form">
 
-<section class="interested-form">
-        <button class="open-button" onclick="openForm()">I'm interested!</button>
-
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-                <h3>Sign up now and be updated on our latest news!</h3>
-
-            <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-
-            <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter email" name="email" required>
-
-    <button type="submit" class="btn">Submit</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-</section>
+            <button class="open-button" onclick="openForm()">I'm interested!</button>
+    
+        </section>
 
 
-        <section class="">
-            <img src="img/scroll-img.jpg">
-            <img src="img/scroll-img.jpg">
-            <img src="img/scroll-img.jpg">
+        <section class="grid">
+            <div class="grid-item"><img src="img/drivingnature.png"></div>
+            <div class="grid-item"><img src="img/scroll-img.jpg"></div>
+            <div class="grid-item"><img src="img/scroll-img.jpg"></div>
+
 
         </section>
 
-        <section class="history">
-            <h3>
-                History
-            </h3>
-            <p>
-                Peugeot is a brand with history.
-                 The first car to carry the Peugeot 
-                 name was unveiled in 1889, making 
-                 Peugeot the
-                world's second oldest car manufacturer
-                 and the oldest continuous car brand.
-                  Family business is now global business.
-                Today we are starting a new chapter. Electric;
-                 it is the future.
-            </p>
-        </section>
+        <section class="video-history">
+            <div class="history">
+                <h2>
+                    History
+                </h2>
+                <p>
+                    Peugeot is a brand with history.
+                    The first car to carry the Peugeot 
+                    name was unveiled in 1889, making 
+                    Peugeot the
+                    world's second oldest car manufacturer
+                    and the oldest continuous car brand.
+                    Family business is now global business.
+                    Today we are starting a new chapter. Electric;
+                    it is the future.
+                </p>
+            </div>
+        
 
-        <section class="video">
-            <video autoplay loop playsinline>
-                <source src="img/videoloop.mp4" type="video/mp4">
-            </video>
+            <div class="video">
+                <video autoplay loop playsinline>
+                    <source src="img/videoloop.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
         
 
-<!-- CHOOSE COLOR -->
+        <!-- CHOOSE COLOR -->
         <div class="colorproduct">
-        <div class="main-color-img">
-            <img src="img/silvermodel.png" class="pro-img" alt="mainproduct"/>
-        </div>
-        <div class="pick-color-img">
-            <div class="box active" onclick="changeImage(this)">
-            <img src="img/silvermodel.png" alt="product" />
+            <h2>Choose color</h2>
+            <div class="main-color-img">
+                <img src="img/silvermodel.png" class="pro-img" alt="mainproduct"/>
             </div>
-            <div class="box" onclick="changeImage(this)">
-            <img src="img/bluemodel.png" alt="product" />
+            <div class="pick-color-img">
+                <div class="box active" onclick="changeImage(this)">
+                    <img src="img/silvermodel.png" alt="product" />
+                </div>
+                <div class="box" onclick="changeImage(this)">
+                    <img src="img/bluemodel.png" alt="product" />
+                </div>
+                <div class="box" onclick="changeImage(this)">
+                    <img src="img/redmodel.png" alt="product" />
+                </div>
             </div>
-            <div class="box" onclick="changeImage(this)">
-            <img src="img/redmodel.png" alt="product" />
-            </div>
-        </div>
         </div>
     
 
+        <section class="interested-form">
 
+            <button class="open-button" onclick="openForm()">I'm interested!</button>
 
-<!--         
-        <button class="open-button" onclick="openForm()">I'm interested</button>
-        <section class="electric-form" id="electric-form">
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeForm()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                    <form action="/" class="formContainer">
+                        <h2 class="sign-up-title">Sign up now and be updated on our latest news!</h2>
+                        <label for="name"><h3 class="name">Name</h3></label>
+
+                        <input type="text" placeholder="Enter name" name="name" required>
+
+                        <label for="email"><h3 class="email">Email</h3></label>
+
+                        <input type="email" placeholder="Enter email" name="email" required>
+
+                        <button type="submit" class="submit"><p>SUBMIT</p></button>
+                    </form>
+                </div>
+            </div>
+        </section>
         
-            <form action="/" class="form-container">
-                <label for="name"><p>Name</p></label>
-                    <input type="text">
-                <label for="email"><p>Email</p></label>
-                    <input type="text">
-
-                <button type="submit" class="btn">Submit</button>
-                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
-            </form>
-    
-        </section> -->
-        
-<section class="interested-form">
-    
-        <button class="open-button" onclick="openFormTwo()">I'm interested!</button>
-
-        <div class="form-popup" id="myFormTwo">
-            <form action="/" class="form-container">
-                <h3>Sign up now and be updated on our latest news!</h3>
-
-            <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter name" name="name" required>
-
-            <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Enter email" name="email" required>
-
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeFormTwo()">Close</button>
-            </form>
-</div>
-</section>
+        <section class="technical-overlay-container">
+            
+            <div class="tech-grid">
+                <div class="techimg">
+                    <img src="img/scroll-img.jpg" />
+                </div>
+                <div class="technical-text">
+                    <h2>Technical overlay</h2>
+                    <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quia, ullam quos perspiciatis necessitatibus voluptate aut numquam eveniet voluptas expedita consequuntur est at corrupti nobis animi tempore alias architecto dolore?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eveniet porro amet quae quis ex voluptatum saepe autem iste iusto. Non cumque reprehenderit laboriosam magni a qui officia ipsa nisi.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
-
-    <section class="merch">
-        <img src="/img/merch-fake.JPG" />
-        <h3>hej hå</h3>
-        <button>View more merch</button>
-    </section>
+        <h2>Merch</h2>
+        <section class="merch" id="merch">
+            <div class="grid-merch">
+                <img src="/img/merch-fake.JPG" />
+            </div>
+            <div class="grid-merch">
+                <img src="/img/merch-fake.JPG" />
+            </div>
+        </section>
+        <section class="merch-btn">
+            <button class="merch-button">VIEW MORE MERCH</button>
+        </section>
 
     </main>
     
     <footer>
-        <p>hej linnformation</p>
+        <ul>
+            <li>
+                CONTACT
+            </li>
+            <li>
+                PEUGEOT – Company
+            </li>
+            <li>
+                PEUGEOT ASSISTANT+
+            </li>
+            <li>
+                SOCIAL MEDIA
+            </li>
+                
+        </ul>
+        <div class="footer-copy">
+        <p>&copy ELECTRIC 2020</p>
+        </div>
     </footer>
 
 </body>

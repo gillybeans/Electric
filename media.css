@@ -1,4 +1,30 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
+    
+    .page-title {
+        left: 20%;
+        top: 18%;
+        font-size: 4rem;
+        font-weight: 600;
+        transition: 0.8s ease;
+        opacity: 0;
+    }
+
+    .page-title-under {
+        left: 15%;
+        top: 33%;
+        font-size: 30px;
+        transition: 0.8s ease;
+        opacity: 0;
+    }
+    
+    .hero-container:hover .page-title {
+        opacity: 1;
+    }
+    .hero-container:hover .page-title-under {
+        opacity: 1;
+    }
+
+    
     .menu-visible {
         display: block;
 
@@ -7,10 +33,108 @@
         margin: 1rem;
         font-size: 13px;
         letter-spacing: 2px;
+        text-decoration: none;
+        color: white;
+        transition: 0.8s ease;
+        /* opacity: 0; */
     }
-    
+
+    .hero-container:hover .menu-visible a{
+        opacity: 1;
+    }
+
+    .menu-visible a:hover {
+        opacity: 0.7;
+      }
 
     .hamburger-menu {
         display: none;
     }
+
+
+    .video-history {
+        width: 100%;
+        display: flex;
+        padding: 2rem;
+        /* background-color: white;
+        color: black; */
+        height: 40rem;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .history {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+  
+    .history p {
+      line-height: 120%;
+      width: 80%;
+  }
+    /* .video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    } */
+
+    /* video {
+        width: 50%;
+    } */
+
+
+    .introduction p {
+        width: 50%;
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+
+    .colorproduct .pick-color-img .box{
+        width: 150px;
+    }
+    
+
+    .technical-overlay-container {
+        padding: 2rem;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+  
+    .tech-grid {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+  }
+  
+    .techimg {
+        width: 50%;
+  }
+    .techimg img {
+        width: 100%;
+        object-fit: contain;
+    }
+  
+    .technical-text {
+        width: 40%;
+        padding-right: 10px;
+        align-items: flex-start;
+    }
+
+
+  
+  /* footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  } */
 }
+

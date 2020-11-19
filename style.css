@@ -5,7 +5,8 @@
 
 body {
   margin: 0;
-  background-color: #1d1f1e;
+  background-color: black;
+  /* background-color: white; */
   color: white;
   font-family: Helvetica, sans-serif;
   /* display: flex;
@@ -14,12 +15,9 @@ body {
 
 .hero-container {
   width: 100%;
+  position: relative;
 }
 
-header {
-  background:rgba(24, 33, 50, 0.1);
-  width: 100%;
-}
 
 
 nav {
@@ -53,11 +51,6 @@ svg path {
   display: none;
 }
 
-.menu-visible a {
-  text-decoration: none;
-  color: white;
-}
-
 
 
 .gradient-box {
@@ -74,23 +67,31 @@ svg path {
 }
 
 
+
+
 h1,
-h2 {
-  position: absolute;
+h2, 
+h3 {
   font-family: 'Dosis', Helvetica, sans-serif;
 }
 
-h1 {
-  left: 2rem;
-  top: 1rem;
-  font-size: 3rem;
+.page-title, .page-title-under {
+  position: absolute;
+}
+
+.page-title {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 75%;
+  font-size: 2.5rem;
   letter-spacing: 3px;
 
 }
 
-h2 {
-  left: 3rem;
-  top: 6rem;
+.page-title-under {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 85%;
   font-weight: 400;
 }
 
@@ -99,23 +100,60 @@ img {
   object-fit: cover;
 }
 
-.introduction {
-  width: 100%;
-  text-align: center;
-  padding: .5rem;
+
+.grid, .merch {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
 }
 
-.history {
+.grid-item {
+  height: 250px;
+}
+
+.grid-merch {
+  height: 400px;
+}
+.grid-item img, .grid-merch img {
+  height: 100%;
+  max-height: 100%;
   width: 100%;
-  text-align: center;
-  padding: .5rem;
+  display: block;
+  object-fit: cover;
+}
+
+
+.history, .introduction, .technical-text {
+  width: 100%;
+  padding: 1rem;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
   width: 100%;
   bottom: 0;
-  height: 4rem;
+  /* height: 4rem; */
   background-color: black;
+  padding: 10px;
+  font-size: 14px;
+}
+
+ul {
+  margin: 0;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+.footer-copy {
   padding: 10px;
 }
 
@@ -162,3 +200,4 @@ video {
   max-width: 100%;
   max-height: 100%;
 }
+
