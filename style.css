@@ -90,6 +90,8 @@ img {
   padding: 20px;
 }
 
+/* Img on scroll  */
+
 .container-scroll img {
   max-width: 100%;
 }
