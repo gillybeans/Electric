@@ -26,5 +26,6 @@ function changeImage(event){
     event.classList.add("active");
   }
 
-
-
+AOS.init({
+                duration: 1200,
+            })

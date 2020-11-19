@@ -1,0 +1,119 @@
+/* la in den här istället för på style*/
+.hamburger-menu {
+  margin: 20px;
+  border: none;
+  background: rgba(24, 33, 50, 0.5);
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+/*för button*/
+.lower {
+  position: fixed;
+  width: 60px;
+  right: 0;
+}
+
+input {
+  display: none;
+}
+
+/*högst oklart*/
+.lower label {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+}
+
+/*pop up*/
+.overlay-menu {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: rgba(24, 33, 50, 0.9);
+}
+
+/* den lille X i pop-up*/
+.overlay-menu label {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: url("https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png");
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* popupens text-placering och animation */
+.overlay-menu nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  transform: translateY(-50%);
+}
+
+/* länkarna */
+.overlay-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+/*list-placering i pop-up*/
+.overlay-menu ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+}
+
+/*textens style och animation i pop-up */
+.overlay-menu ul li a {
+  font-weight: 300;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: "Dosis", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+/*animation för att pop-up ska va hidden*/
+.lower ~ .overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+/*animation för hur pop-up ska visas när checkbox är ikryssad */
+#op:checked ~ .overlay-hugeinc {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 1;
+  transform: translateY(-25%) rotateX(35deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/**högst oklart*/
+#op:checked ~ .overlay-hugeinc nav ul {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+/* animtation så länkarna åker upp i det pop-upp-lagret */
+#op:not(:checked) ~ .overlay-hugeinc nav ul {
+  transform: translateY(25%) rotateX(-35deg);
+}
