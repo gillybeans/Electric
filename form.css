@@ -5,6 +5,7 @@
 .interested-form, .merch-btn {
   display: flex;
   justify-content: center;
+  
 }
 
 .open-button, .merch-button {
@@ -19,9 +20,13 @@
   opacity: 0.8;
   bottom: 23px;
   width: 280px;
+  transition-duration: 0.7s
+  
 }
 
-
+.open-button:hover, .merch-button:hover {
+  transform: scale(1.1);
+}
 
 /* The overlay effect with black background */
 .overlay {

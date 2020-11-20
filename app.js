@@ -26,6 +26,9 @@ function changeImage(event){
     event.classList.add("active");
   }
 
+
+// IMAGE ON SCROLL
+
 AOS.init({
                 duration: 1200,
             })

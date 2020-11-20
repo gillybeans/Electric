@@ -29,6 +29,11 @@
         display: block;
 
     }
+
+    .menu-visible ul {
+        display: flex;
+        flex-direction: row;
+    }
     .menu-visible a {
         margin: 1rem;
         font-size: 13px;
@@ -36,14 +41,14 @@
         text-decoration: none;
         color: white;
         transition: 0.8s ease;
-        /* opacity: 0; */
+        opacity: 0;
     }
 
     .hero-container:hover .menu-visible a{
         opacity: 1;
     }
 
-    .menu-visible a:hover {
+    .menu-visible li:hover {
         opacity: 0.7;
       }
 
