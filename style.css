@@ -117,9 +117,8 @@ img {
   object-fit: cover;
 }
 
-.history,
-.introduction,
-.technical-text {
+
+.history, .technical-text, .introduction {
   width: 100%;
   padding: 1rem;
   line-height: 160%;
@@ -128,6 +127,19 @@ img {
   justify-content: center;
   align-items: center;
 }
+/* 
+.history, .technical-text {
+  width: 100%;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technical-text h2, .history h2 {
+  margin: 0;
+} */
 
 footer {
   width: 100%;
@@ -176,7 +188,8 @@ video {
 .colorproduct .pick-color-img .box {
   display: inline-block;
   width: 70px;
-  border: 1px solid gray;
+  border: 0.5px solid gray;
+  border-radius: 5%;
   border-width: 2px;
   margin: 2px;
   cursor: pointer;

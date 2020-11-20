@@ -71,8 +71,9 @@
 
     .history {
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
-        padding: 2rem;
+        padding-top: 0;
     }
   
     .history p {
@@ -98,9 +99,13 @@
 
 
     .colorproduct .pick-color-img .box{
-        width: 150px;
+        margin: 1rem;
+        width: 130px;
     }
-    
+
+    .colorproduct .main-color-img img {
+        width: 80%;
+    }
 
     .technical-overlay-container {
         padding: 2rem;
@@ -130,6 +135,8 @@
     .technical-text {
         width: 40%;
         padding-right: 10px;
+        padding-top: 0;
+        justify-content: flex-start;
         align-items: flex-start;
     }
 
