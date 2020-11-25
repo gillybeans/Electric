@@ -105,14 +105,6 @@ h3 {
   font-family: 'Dosis', Helvetica, sans-serif;
 }
 
-label {
-  font-family: "Dosis", Helvetica, sans-serif;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-
 .merchtitle {
   width: 100%;
   display: flex;

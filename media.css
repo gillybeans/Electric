@@ -103,6 +103,11 @@
     width: 80%;
   }
 
+  /* Submit button in form  */
+  .overlay button {
+    width: 22%;
+  }
+
   /****** Technical overlay  *******/
 
   .technical-overlay-container {
