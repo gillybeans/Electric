@@ -51,10 +51,42 @@ svg path {
   display: none;
 }
 
+.logotype {
+  position: absolute;
+  left: 50%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: translateX(-50%) translateY(-50%);
+  top: 85%;
+  padding: 30px;
+  z-index: 99;
+  opacity: 80%;
+}
+
+.logotype h2 {
+  left: 57%;
+  letter-spacing: 1px;
+  transform: translateX(-50%) translateY(-50%);
+  top: 86%;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Dosis", Helvetica, sans-serif;
+}
+
+label {
+  font-family: "Dosis", Helvetica, sans-serif;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 .merchtitle {
@@ -63,25 +95,10 @@ h3 {
   justify-content: center;
 }
 
-.page-title,
+/* .page-title,
 .page-title-under {
   position: absolute;
-}
-
-.page-title {
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  top: 75%;
-  font-size: 2.5rem;
-  letter-spacing: 3px;
-}
-
-.page-title-under {
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  top: 85%;
-  font-weight: 400;
-}
+} */
 
 img {
   width: 100%;
@@ -123,8 +140,9 @@ img {
   object-fit: cover;
 }
 
-
-.history, .technical-text, .introduction {
+.history,
+.technical-text,
+.introduction {
   width: 100%;
   padding: 1rem;
   line-height: 160%;
@@ -138,7 +156,6 @@ img {
   background-color: white;
   color: black;
 }
-
 
 /* 
 .history, .technical-text {
@@ -167,7 +184,6 @@ footer {
 footer a {
   text-decoration: none;
   color: #162133;
-
 }
 
 ul {

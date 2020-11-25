@@ -65,13 +65,17 @@
 
 
     
-        <h1 class="page-title">ELECTRIC.</h1>
-        <h2 class="page-title-under">You are special.</h2>
-        <picture>
+     <!--    <h1 class="page-title">ELECTRIC.</h1> -->
+     <div class="logotype">
+    <img src="/img/lolotype.svg">
+     <h2>You are special.</h2>
+    </div>
+    <picture>
             <source srcset="/img/hero-landscape-min.png" media="(min-width: 800px)" class="img" />
             <source srcset="img/hero-portrait-min.png" media="(min-width: 400px)" class="img" />
             <img src="/img/hero-portrait.png" class="img"/>
         </picture>
+
 
         
         
@@ -93,7 +97,7 @@
             </p>
         </section>
 
-        <section class="interested-form">
+        <section class="first-interested">
 
             <button class="open-button" onclick="openForm()">I'M INTERESTED!</button>
     
@@ -163,6 +167,9 @@
             <div class="interioritem1">
         <img src="img/interiortest.png" alt="interior of something" />
             </div>
+            <div class="interioritem1">
+                <img src="img/interiorabove.png" alt="interior of something" />
+            </div>
                 </section>
 
         <!-- CHOOSE COLOR -->
@@ -185,8 +192,9 @@
         </div>
     
 
-        <section class="interested-form">
 
+        <section class="interested-form">
+<h3>Follow us into the future and get more Electric</h3>
             <button class="open-button" onclick="openForm()">I'M INTERESTED!</button>
 
             <div id="myOverlay" class="overlay">
@@ -194,13 +202,13 @@
                 <div class="overlay-content">
                     <form action="/" class="formContainer">
                         <h2 class="sign-up-title">Sign up now and be updated on our latest news!</h2>
-                        <label for="name"><h3 class="name">Name</h3></label>
+                        <label for="name">Name</label>
 
-                        <input type="text" placeholder="Enter name" name="name" required>
+                        <input type="text" placeholder="Enter name" name="name" id="name" required>
 
-                        <label for="email"><h3 class="email">Email</h3></label>
+                        <label for="email">Email</label>
 
-                        <input type="email" placeholder="Enter email" name="email" required>
+                        <input type="email" placeholder="Enter email" name="email" id="email" required>
 
                         <button type="submit" class="submit"><p>SUBMIT</p></button>
                     </form>

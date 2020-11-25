@@ -1,167 +1,159 @@
 @media only screen and (min-width: 800px) {
-    
-    .page-title {
-        left: 20%;
-        top: 18%;
-        font-size: 4rem;
-        font-weight: 600;
-        transition: 0.8s ease;
-        opacity: 0;
-    }
-
-    .page-title-under {
-        left: 15%;
-        top: 33%;
-        font-size: 30px;
-        transition: 0.8s ease;
-        opacity: 0;
-    }
-    
-    .hero-container:hover .page-title {
-        opacity: 1;
-    }
-    .hero-container:hover .page-title-under {
-        opacity: 1;
-    }
-
-    
-    .menu-visible {
-        display: block;
-
-    }
-
-    .menu-visible ul {
-        display: flex;
-        flex-direction: row;
-    }
-    .menu-visible a {
-        margin: 1rem;
-        font-size: 13px;
-        letter-spacing: 2px;
-        text-decoration: none;
-        color: white;
-        transition: 0.8s ease;
-        opacity: 0;
-    }
-
-    .hero-container:hover .menu-visible a{
-        opacity: 1;
-    }
-
-    .menu-visible li:hover {
-        opacity: 0.7;
-      }
-
-    .hamburger-menu {
-        display: none;
-    }
-
-
-    .video-history {
-        width: 100%;
-        display: flex;
-        padding: 2rem;
-        /* background-color: white;
-        color: black; */
-        height: 40rem;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .history {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-top: 0;
-    }
-  
-    .history p {
-      line-height: 120%;
-      width: 80%;
+  .lolotype {
+    left: 20%;
+    top: 28%;
+    font-size: 4rem;
+    font-weight: 600;
+    transition: 0.8s ease;
+    opacity: 0;
   }
-    /* .video {
+
+  .page-title-under {
+    left: 27%;
+    top: 30%;
+    font-size: 30px;
+    transition: 0.8s ease;
+    opacity: 0;
+  }
+
+  .hero-container:hover .lolotype {
+    opacity: 1;
+  }
+  .hero-container:hover .page-title-under {
+    opacity: 1;
+  }
+
+  .menu-visible {
+    display: block;
+  }
+
+  .menu-visible ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-visible a {
+    margin: 1rem;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    transition: 0.8s ease;
+    opacity: 0;
+  }
+
+  .hero-container:hover .menu-visible a {
+    opacity: 1;
+  }
+
+  .menu-visible li:hover {
+    opacity: 0.7;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .video-history {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    /* background-color: white;
+        color: black; */
+    height: 40rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .history {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .history p {
+    line-height: 120%;
+    width: 80%;
+  }
+  /* .video {
         width: 100%;
         display: flex;
         justify-content: center;
     } */
 
-    /* video {
+  /* video {
         width: 50%;
     } */
 
-
-    .introduction p {
-        width: 50%;
-        font-size: 20px;
-        line-height: 120%;
-    }
-
-
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 20px;
-    }
-
-    .merchtitle {
-        justify-content: flex-start;
-        padding-left: 3rem;
-    }
-
-
-    .colorproduct .pick-color-img .box{
-        margin: 1rem;
-        width: 130px;
-    }
-
-    .colorproduct .main-color-img img {
-        width: 80%;
-    }
-
-    .technical-overlay-container {
-        padding: 2rem;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        height: 40rem;
-        display: flex;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-  
-    .tech-grid {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+  .introduction p {
+    width: 50%;
+    font-size: 20px;
+    line-height: 120%;
   }
-  
-    .techimg {
-        width: 50%;
+
+  h2 {
+    font-size: 30px;
   }
-    .techimg img {
-        width: 100%;
-        object-fit: contain;
-    }
-  
-    .technical-text {
-        width: 40%;
-        padding-right: 10px;
-        padding-top: 0;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+  p {
+    font-size: 20px;
+  }
 
-    ul {
-        display: flex;
-    }
+  .merchtitle {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
 
-    footer {
-        display: flex;
-        
-        flex-direction: column;
-        align-items: center;
-    }
+  .colorproduct .pick-color-img .box {
+    margin: 1rem;
+    width: 130px;
+  }
+
+  .colorproduct .main-color-img img {
+    width: 80%;
+  }
+
+  .technical-overlay-container {
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tech-grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .techimg {
+    width: 50%;
+  }
+  .techimg img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .technical-text {
+    width: 40%;
+    padding-right: 10px;
+    padding-top: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
