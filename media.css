@@ -1,5 +1,5 @@
 @media only screen and (min-width: 800px) {
-  .lolotype {
+  .logotype {
     left: 20%;
     top: 28%;
     font-size: 4rem;
@@ -8,20 +8,10 @@
     opacity: 0;
   }
 
-  .page-title-under {
-    left: 27%;
-    top: 30%;
-    font-size: 30px;
-    transition: 0.8s ease;
-    opacity: 0;
+  .hero-container:hover .logotype {
+    opacity: 1;
   }
 
-  .hero-container:hover .lolotype {
-    opacity: 1;
-  }
-  .hero-container:hover .page-title-under {
-    opacity: 1;
-  }
 
   .menu-visible {
     display: block;
