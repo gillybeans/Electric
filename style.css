@@ -3,6 +3,23 @@
   outline: none;
 }
 
+@font-face {
+  font-family: 'Dosis';
+  src: url('/Fonts/Dosis-Regular.woff2') format('woff2'),
+      url('Fonts/Dosis-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url('Fonts/Dosis-Bold.woff2') format('woff2'),
+      url('Fonts/Dosis-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   background-color: black;
@@ -54,7 +71,7 @@ svg path {
 h1,
 h2,
 h3 {
-  font-family: "Dosis", Helvetica, sans-serif;
+  font-family: 'Dosis', Helvetica, sans-serif;
 }
 
 .merchtitle {
