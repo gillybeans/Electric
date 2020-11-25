@@ -125,7 +125,12 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
   }
+
+  /*.tech-grid {
+    flex-direction: row-reverse;
+  }*/
 
   .techimg {
     width: 50%;

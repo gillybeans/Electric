@@ -168,6 +168,11 @@ img {
   align-items: center;
 }
 
+
+/*.technical-text {
+  flex-direction: column-reverse;
+}*/
+
 .technical-overlay-container {
   background-color: white;
   color: black;
