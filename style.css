@@ -181,6 +181,11 @@ img {
   margin: 1rem;
 }
 
+/**** Text Areas  ****/
+
+video {
+  width: 100%;
+}
 
 
 .history,
@@ -193,6 +198,8 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .technical-text {
   width: 100%;
@@ -226,14 +233,8 @@ img {
   color: black;
 }
 
-hr {
-  border-top: 4px solid white;
-}
-
-
-
-video {
-  width: 100%;
+.techimg {
+  background: #000;
 }
 
 
