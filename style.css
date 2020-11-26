@@ -30,6 +30,8 @@ body {
     flex-direction: column; */
 }
 
+
+/*********** HEADER & LOGO ***********/
 .hero-container {
   width: 100%;
   position: relative;
@@ -44,6 +46,10 @@ nav {
   justify-content: flex-end;
   padding: 1rem;
   z-index: 2;
+}
+
+.menu-visible {
+  display: none;
 }
 
 .hamburger-menu {
@@ -62,10 +68,6 @@ svg {
 
 svg path {
   fill: white;
-}
-
-.menu-visible {
-  display: none;
 }
 
 .logotype {
@@ -95,67 +97,31 @@ svg path {
   top: 59%;
   left: 32%;
   width: 100%;
-
-
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Dosis', Helvetica, sans-serif;
-}
 
-.merchtitle {
+/*********** GRADIENT COLOR ************/
+.introGradient {
   width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-/* .page-title,
-.page-title-under {
+  height: 20vh;
+  display: table;
   position: absolute;
-} */
-
-img {
-  width: 100%;
-  object-fit: cover;
+  left: 0;
+  z-index: 1;
 }
 
-.merch, .interior {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-  padding: 20px;
-  margin-bottom: 25px;
+.topGradient {
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, black 99%);
 }
 
-/* Img on scroll  */
-
-.container-scroll img {
-  max-width: 100%;
+.bottomGradient {
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, black 99%);
 }
 
-.item {
-  max-width: 100%;
-  margin: 0.1rem auto;
-}
 
-/* .grid-item {
-  height: 250px;
-} */
-
-.grid-merch {
-  height: 400px;
-}
-.grid-item img,
-.grid-merch img {
-  height: 100%;
-  max-height: 100%;
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
+/******** MAIN ********/
 .history,
 .technical-text,
 .introduction {
@@ -168,43 +134,20 @@ img {
   align-items: center;
 }
 
-
-/*.technical-text {
-  flex-direction: column-reverse;
-}*/
-
-.technical-overlay-container {
-  background-color: white;
-  color: black;
+h1,
+h2,
+h3 {
+  font-family: 'Dosis', Helvetica, sans-serif;
 }
 
-/* 
-.history, .technical-text {
+img {
   width: 100%;
-  line-height: 160%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
 }
 
-.technical-text h2, .history h2 {
-  margin: 0;
-} */
-
-footer {
-  width: 100%;
-  bottom: 0;
-  background-color: white;
-  color: black;
-  padding: 10px;
-  font-size: 14px;
-  margin-top: 1rem;
-}
-
-footer a {
-  text-decoration: none;
-  color: #162133;
+.item {
+  max-width: 100%;
+  margin: 0.1rem auto;
 }
 
 ul {
@@ -218,15 +161,19 @@ li {
   margin: 10px;
 }
 
-.footer-copy {
-  text-align: center;
-  font-weight: bold;
+/**** IMG ON SCROLL ****/
+.container-scroll img {
+  max-width: 100%;
 }
 
 video {
   width: 100%;
 }
 
+.technical-overlay-container {
+  background-color: white;
+  color: black;
+}
 
 .interior {
   display: grid; 
@@ -243,7 +190,7 @@ video {
   display: block;
 }
 
-/**** thumbs ****/
+/******** THUMBS *********/
 .colorproduct .pick-color-img {
   text-align: center;
 }
@@ -267,22 +214,87 @@ video {
   max-height: 100%;
 }
 
-/************** GRADIENT BOX **************/
-.introGradient {
+/****** Continue MAIN ******/
+.merchtitle {
   width: 100%;
-  height: 20vh;
-  display: table;
-  position: absolute;
-  left: 0;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.topGradient {
-  top: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, black 99%);
+.grid-merch {
+  height: 400px;
 }
 
-.bottomGradient {
+.grid-item img,
+.grid-merch img {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.merch, .interior {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+/* .techimg {
+  background-color: black;
+}*/
+
+
+/******** FOOTER ********/
+footer {
+  width: 100%;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, black 99%);
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 1rem;
 }
+
+footer a {
+  text-decoration: none;
+  color: #162133;
+}
+
+.footer-copy {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+/* .page-title,
+.page-title-under {
+  position: absolute;
+} */
+
+/* .grid-item {
+  height: 250px;
+} */
+
+/*.technical-text {
+  flex-direction: column-reverse;
+}*/
+
+/* 
+.history, .technical-text {
+  width: 100%;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technical-text h2, .history h2 {
+  margin: 0;
+} */

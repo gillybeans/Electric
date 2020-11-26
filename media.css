@@ -12,11 +12,9 @@
     opacity: 1;
   }
 
-
   .menu-visible {
     display: block;
   }
-
   .menu-visible ul {
     display: flex;
     flex-direction: row;
@@ -30,29 +28,15 @@
     transition: 0.8s ease;
     opacity: 0;
   }
-
   .hero-container:hover .menu-visible a {
     opacity: 1;
   }
-
   .menu-visible li:hover {
     opacity: 0.7;
   }
 
   .hamburger-menu {
     display: none;
-  }
-
-  .video-history {
-    width: 100%;
-    display: flex;
-    padding: 2rem;
-    /* background-color: white;
-        color: black; */
-    height: 40rem;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .history {
@@ -66,6 +50,18 @@
     line-height: 120%;
     width: 80%;
   }
+  .video-history {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    /* background-color: white;
+        color: black; */
+    height: 40rem;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   /* .video {
         width: 100%;
         display: flex;
@@ -103,12 +99,13 @@
     width: 80%;
   }
 
-  /* Submit button in form  */
+  /**** Submit button in form  ****/
   .overlay button {
     width: 22%;
   }
 
-  /****** Technical overlay  *******/
+
+  /******** TECHINCAL OVERLAY ********/
 
   .technical-overlay-container {
     padding: 2rem;
@@ -127,10 +124,6 @@
     justify-content: space-around;
     flex-direction: row-reverse;
   }
-
-  /*.tech-grid {
-    flex-direction: row-reverse;
-  }*/
 
   .techimg {
     width: 50%;
@@ -152,7 +145,8 @@
     margin: 0;
   }
 
-/***** Footer  *****/
+
+/******* FOOTER *******/
 
   footer {
     display: flex;
