@@ -30,6 +30,8 @@ body {
     flex-direction: column; */
 }
 
+
+/********** HEADER & LOGO **********/
 .hero-container {
   width: 100%;
   position: relative;
@@ -55,6 +57,10 @@ nav {
   z-index: 2;
 }
 
+.menu-visible {
+  display: none;
+}
+
 svg {
   width: 50px;
   height: 30px;
@@ -62,10 +68,6 @@ svg {
 
 svg path {
   fill: white;
-}
-
-.menu-visible {
-  display: none;
 }
 
 .logotype {
@@ -95,9 +97,31 @@ svg path {
   top: 59%;
   left: 32%;
   width: 100%;
-
-
 }
+
+/************** GRADIENT BOX **************/
+.introGradient {
+  width: 100%;
+  height: 20vh;
+  display: table;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.topGradient {
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, black 99%);
+}
+
+.bottomGradient {
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, black 99%);
+}
+
+
+
+/************** MAIN ************/
 
 h1,
 h2,
@@ -262,22 +286,4 @@ video {
   max-height: 100%;
 }
 
-/************** GRADIENT BOX **************/
-.introGradient {
-  width: 100%;
-  height: 20vh;
-  display: table;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-}
 
-.topGradient {
-  top: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0) 5%, black 99%);
-}
-
-.bottomGradient {
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, black 99%);
-}
