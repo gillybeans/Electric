@@ -158,14 +158,19 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  color: black;
 }
 
 .merchtitle {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: white;
+  color: black;
 }
 
 
@@ -290,8 +295,8 @@ video {
 footer {
   width: 100%;
   bottom: 0;
-  background-color: white;
-  color: black;
+  /* background-color: white;
+  color: black; */
   padding: 10px;
   font-size: 14px;
   margin-top: 1rem;
@@ -299,7 +304,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #162133;
+  color: white;
 }
 
 ul {
