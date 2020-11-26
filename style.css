@@ -138,6 +138,19 @@ h1,
 h2,
 h3 {
   font-family: 'Dosis', Helvetica, sans-serif;
+.technical-overlay-container {
+  background-color: white;
+  color: black;
+}
+
+
+.history, .technical-text {
+  width: 100%;
+  line-height: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
