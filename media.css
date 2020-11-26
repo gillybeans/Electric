@@ -82,14 +82,16 @@
     font-size: 30px;
   }
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .merchtitle {
     justify-content: flex-start;
     padding-left: 3rem;
   }
-
+  .colorproduct {
+    margin-top: 3.5rem;
+  }
   .colorproduct .pick-color-img .box {
     margin: 1rem;
     width: 130px;
@@ -145,7 +147,22 @@
     margin: 0;
   }
 
+  .interior {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+    /* height: 70vh; */
+  }
 
+  .interior div {
+   width: 50%;
+   padding: 2rem;
+  }
+
+  .interior img {
+    width: 100%;
+  }
 /******* FOOTER *******/
 
   footer {
