@@ -4,21 +4,20 @@
 }
 
 @font-face {
-  font-family: 'Dosis';
-  src: url('/Fonts/Dosis-Regular.woff2') format('woff2'),
-      url('Fonts/Dosis-Regular.woff') format('woff');
+  font-family: "Dosis";
+  src: url("/Fonts/Dosis-Regular.woff2") format("woff2"),
+    url("Fonts/Dosis-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Dosis';
-  src: url('Fonts/Dosis-Bold.woff2') format('woff2'),
-      url('Fonts/Dosis-Bold.woff') format('woff');
+  font-family: "Dosis";
+  src: url("Fonts/Dosis-Bold.woff2") format("woff2"),
+    url("Fonts/Dosis-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
-
 
 body {
   margin: 0;
@@ -29,7 +28,6 @@ body {
   /* display: flex;
     flex-direction: column; */
 }
-
 
 /********** HEADER & LOGO **********/
 .hero-container {
@@ -93,6 +91,7 @@ svg path {
   letter-spacing: 3px;
   font-weight: 400;
   margin: 0;
+  cursor: default;
   position: absolute;
   top: 59%;
   left: 32%;
@@ -119,14 +118,12 @@ svg path {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, black 99%);
 }
 
-
-
 /************** MAIN ************/
 
 h1,
 h2,
 h3 {
-  font-family: 'Dosis', Helvetica, sans-serif;
+  font-family: "Dosis", Helvetica, sans-serif;
 }
 
 .merchtitle {
@@ -145,7 +142,8 @@ img {
   object-fit: cover;
 }
 
-.merch, .interior {
+.merch,
+.interior {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
@@ -246,9 +244,8 @@ video {
   width: 100%;
 }
 
-
 .interior {
-  display: grid; 
+  display: grid;
 }
 
 /******** CHOOSE COLOR *********/
@@ -285,5 +282,3 @@ video {
   max-width: 100%;
   max-height: 100%;
 }
-
-
