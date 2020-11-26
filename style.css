@@ -126,11 +126,6 @@ h3 {
   font-family: "Dosis", Helvetica, sans-serif;
 }
 
-.merchtitle {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
 
 h2 {
@@ -164,6 +159,15 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.merchtitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
 
 .small-merch-items {
   display: flex;
